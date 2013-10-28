@@ -19,5 +19,5 @@ function distance (a, b)
 end
 
 function direction(a,b)
-    return math.atan2(b.y-a.y, b.x-a.x) 
+    return math.atan2(b.y-a.y, b.x-a.x)    
 end

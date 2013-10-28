@@ -8,7 +8,7 @@ for file in lfs.dir[[./units]] do
     if lfs.attributes("./units/"..file,"mode") == "file" then 
        --print ("is a file " .. file)
        if string.sub(file, -4, -1) == ".lua" then
-            --print("loading file, "..file)      
+            print("loading file, "..file)      
             local unit = dofile("./units/" .. file)
         
             if not unit.kind then

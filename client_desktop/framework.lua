@@ -5,7 +5,7 @@ require("luaglu")
 require("imlua")
 
 package.path = package.path .. ";?.lua"
-require"harvest"
+require "harvest"
 
 iup.key_open()
 
@@ -168,7 +168,7 @@ end
 
 function start()
     if (not iup.MainLoopLevel or iup.MainLoopLevel()==0) then
-        iup.MainLoop()
+          iup.MainLoop()
     end
 end
 start()
